@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #0A0A0A;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    overflow-x: hidden;
+    background-image: 
+      radial-gradient(circle at 50% 50%, #222 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+}
+
+@layer components {
+  .clip-angle {
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% calc(100% - 20px),
+      calc(100% - 20px) 100%,
+      0 100%
+    );
+  }
+  
+  .clip-angle-reverse {
+    clip-path: polygon(
+      20px 0,
+      100% 0,
+      100% 100%,
+      0 100%,
+      0 20px
+    );
+  }
+
+  .tech-border {
+    @apply border-2 relative;
+    border-color: rgba(184, 184, 184, 0.3);
+  }
+
+  .tech-border::before {
+    content: '';
+    @apply absolute top-0 left-0 w-2 h-2;
+    background-color: #D2F500;
+  }
+  
+  .tech-border::after {
+    content: '';
+    @apply absolute bottom-0 right-0 w-2 h-2;
+    background-color: #D2F500;
+  }
+
+  .glitch-text {
+    @apply relative inline-block;
+  }
+  
+  .glitch-text::before,
+  .glitch-text::after {
+    content: attr(data-text);
+    @apply absolute top-0 left-0 w-full h-full opacity-70;
+  }
+
+  .glitch-text::before {
+    @apply -ml-1 animate-pulse;
+    color: #D2F500;
+    clip-path: inset(0 0 50% 0);
+  }
+  
+  .glitch-text::after {
+    @apply ml-1 animate-pulse;
+    color: #FF4D00;
+    clip-path: inset(50% 0 0 0);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #0A0A0A;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #D2F500;
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #FFD600;
+}
