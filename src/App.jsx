@@ -393,7 +393,7 @@ function App() {
                 subtitle: "AI-Powered Study Environment",
                 desc: "A comprehensive desktop study application built with Tauri 2. Features 'Nyx', an intelligent AI tutor utilizing Gemini & DeepSeek to guide learning through flashcards, active recall, and Socratic tutoring.",
                 tags: ["Tauri / Rust", "Gemini AI", "DeepSeek", "Education"],
-                img: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=2670&auto=format&fit=crop",
+                img: "./assets/nyx.png",
                 color: "border-zzz-green text-zzz-green"
               },
               {
@@ -411,7 +411,7 @@ function App() {
                 subtitle: "Reverse: 1999 Strategy Tool",
                 desc: "Advanced team composition engine using Google Gemini AI. Analyzes complex game meta, character synergies, and damage types to generate optimized team builds with detailed reasoning.",
                 tags: ["Gemini AI", "Vanilla JS", "Prompt Engineering"],
-                img: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2670&auto=format&fit=crop",
+                img: "./assets/arcanist.png",
                  color: "border-zzz-yellow text-zzz-yellow"
               }
             ].map((project) => (
@@ -470,15 +470,15 @@ function App() {
                     <div className="space-y-4 font-mono text-sm pt-8">
                          <div className="flex items-center gap-4 p-3 border border-white/20 hover:bg-white/5 transition-colors cursor-pointer group">
                             <Mail className="text-zzz-green group-hover:text-white" />
-                            <span>gerard.garcia@university.edu</span>
+                            <span>gerardgarcia207@gmail.com</span>
                          </div>
                          <div className="flex items-center gap-4 p-3 border border-white/20 hover:bg-white/5 transition-colors cursor-pointer group">
                            <Linkedin className="text-zzz-cyan group-hover:text-white" />
-                            <span>linkedin.com/in/gerardgarcia</span>
+                            <span>linkedin.com/in/garciashunko</span>
                          </div>
                          <div className="flex items-center gap-4 p-3 border border-white/20 hover:bg-white/5 transition-colors cursor-pointer group">
                             <Github className="text-purple-400 group-hover:text-white" />
-                            <span>github.com/gerardgarcia</span>
+                            <span>github.com/Erionoir</span>
                          </div>
                     </div>
                   </div>
